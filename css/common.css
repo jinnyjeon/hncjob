@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* common.css */
+
+/* 웹폰트설정 */
+
+/* 
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-sans-kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    /* font-family: "Noto Sans KR", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* float 해제를 위한 가상 클래스 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 컨텐츠 너비설정 */
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+.inbox { /* index-바로가기 박스 */
+    /* width: 1200px; */
+    width: 1000px;
+    margin: 0 auto;
+}

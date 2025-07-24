@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/* index.css */
+
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    position: relative;
+}
+main .intro-txt {
+    color: rgb(255,255,255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+main .intro-txt p {}
+main .intro-txt p:first-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+main .intro-txt p:last-child {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+section {
+    /* background-color: antiquewhite; */
+    margin-bottom: 120px;
+    padding-top: 150px;
+}
+
+/* article1. 바로가기 링크 */
+article.quick-menu {
+    /* outline: 3px solid red; */
+    margin-bottom: 150px;
+}
+article.quick-menu .inbox {
+    /* outline: 3px solid red; */
+}
+
+article.quick-menu .contact-box {
+    /* width: 600px; 
+    height: 580px; */
+    width: 50%;
+    height: 500px;
+    border-radius: 16px;
+    /* margin-right: 20px; */
+    background-color: #234092;
+    
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+
+    position: relative;
+}
+article.quick-menu .contact-box .txt {
+    /* outline: 2px solid lime; */
+
+    position: absolute;
+    width: calc(100% - 100px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+article.quick-menu .contact-box .title {
+    
+    /* padding: 20px 0; */
+    margin-bottom: 60px;
+    color: rgb(255,255,255, 1);
+}
+article.quick-menu .contact-box .title h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+article.quick-menu .contact-box .title p {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+article.quick-menu .contact-box .info {}
+article.quick-menu .contact-box .info p {
+    font-size: 1.5rem;
+    color: rgb(255,255,255, 0.8);
+}
+article.quick-menu .contact-box .info b {
+    font-weight: 500;
+    color: rgb(255,255,255, 0.9);
+}
+
+
+article.quick-menu .icon-box {
+    /* width: 580px; */
+    /* width: calc(50% - 20px); */
+    width: 50%;
+    float: right;
+}
+article.quick-menu .icon-box li {
+    /* width: 280px; */
+    width: calc(50% - 20px);
+    /* height: 280px; */
+    height: 240px;
+    margin-left: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #0F62CA;
+    background-color: rgb(255,255,255);
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+article.quick-menu .icon-box li:nth-child(3), article.quick-menu .icon-box li:nth-child(4) {
+    margin-bottom: 0;
+}
+article.quick-menu .icon-box li a {
+    padding: 0 30px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+article.quick-menu .icon-box li a .icon-inbox {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+article.quick-menu .icon-box li img {
+    margin-bottom: 30px;
+}
+article.quick-menu .icon-box li .txt {}
+article.quick-menu .icon-box li .txt span {
+    display: block;
+}
+article.quick-menu .icon-box li .txt span:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3887C9;
+}
+article.quick-menu .icon-box li .txt span:last-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0F62CA;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+
+
+/* article2. 인기강좌 */
+article.education {
+    width: 100%;
+    padding: 130px 0;
+    margin-bottom: 100px;
+    background-image: url(../img/bg_blue.jpg);
+    background-size: cover;
+
+    font-family: "Noto Sans KR", sans-serif;
+}
+article.education > article {
+    width: 1280px;
+    margin: 0 auto;
+
+    position: relative; /* .title의 기준! */
+}
+
+
+article.education > article.license {
+    margin-bottom: 80px;
+}
+article.education > article.job {}
+
+
+/* 공통 css */
+article.education .title {
+    /* outline: 2px solid blue; */
+
+    /* width: 25%; */
+    float: left;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* padding: 20px 0; */
+}
+article.education .title p {
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    color: #555;
+}
+article.education .title p span {
+    background-image: url(../img/highlight.gif);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: auto 80%;
+    padding: 0 3px;
+}
+article.education .title h3 {
+    margin-bottom: 60px;
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #333;
+}
+article.education .title a.more {
+    font-size: 1rem;
+    color: #555;
+}
+article.education .title a.more:hover {
+    color: #234092;
+    text-decoration: underline;
+}
+
+article.education .edubox-wrap {
+    /* outline: 2px solid red; */
+
+    width: 75%;
+    float: right;
+}
+article.education .edubox-wrap li {
+    /* outline: 3px solid plum; */
+    width: 32%;
+    float: left;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(200,200,200,0.6);
+}
+article.education .edubox-wrap li~li {
+    margin-left: 2%;
+}
+article.education .edubox-wrap li .img-box {
+    width: 100%;
+}
+article.education .edubox-wrap li .img-box img {
+    width: 100%;
+}
+article.education .edubox-wrap li h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 24px;
+    height: 48px; /* 최대2줄 */
+    padding: 16px;
+}
+
+
+/* article3. 배너 */
+article.program {
+    /* background-color: greenyellow; */
+}
+article.program .inner {
+    /* outline: 2px solid red; */
+}
+article.program h2 {
+    font-size: 2.3rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+article.program .program-banner {
+    font-family: "Noto Sans KR", sans-serif;
+    
+}
+article.program .program-banner > div {
+    width: 49%;
+    /* height: 300px; */
+    float: left;
+    border-radius: 20px;
+    padding: 60px 50px 80px;
+    box-sizing: border-box;
+}
+article.program .program-banner > div.box1 {
+    margin-right: 2%;
+    background-color: #C9E2FF;
+    background-image: url(../img/banner_university.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 80%;
+}
+article.program .program-banner > div.box2 {
+    background-color: #CAF3FD;
+    background-image: url(../img/banner_building.png);
+    background-repeat: no-repeat;
+    background-position: 90% bottom;
+    background-size: auto 90%;
+}
+article.program .program-banner > div a {
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+article.program .program-banner > div .txt-box {
+    
+}
+
+.txt-box h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.txt-box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+}

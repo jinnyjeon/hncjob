@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* footer.css */
+
+footer {
+    /* border-top: 1px solid #ccc; */
+    /* padding: 60px 0; */
+    background-color: #000;
+    font-size: 1rem;
+}
+
+footer .links {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+footer .links ul {
+    width: 1280px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+footer .links ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+footer .links ul li a {
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+}
+footer .links ul li a:hover {
+    color: rgba(255,255,255,0.8);
+}
+
+footer .inner {
+    padding: 40px 0 60px;
+}
+footer .logo-bottom {
+    float: left;
+    margin-right: 40px;
+}
+footer .logo-bottom img {
+    opacity: 0.5;
+    height: 40px;
+    margin-top: 5px;
+}
+
+footer .info {
+    float: left;
+    width: 60%;
+}
+
+footer .info .company-info {
+    margin-bottom: 20px;
+}
+footer .info .company-info p {
+    display: inline-block;
+    color: rgba(255,255,255,0.3);
+    margin-right: 10px;
+    font-weight: 300;
+}
+footer .info .company-info p b {
+    font-weight: 500;
+}
+footer .info .copy {
+    color: rgba(255,255,255,0.3);
+}
+
+
