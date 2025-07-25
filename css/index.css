@@ -18,7 +18,10 @@ main .intro-txt {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50%;
+    top: 60%;
+    opacity: 0;
+
+    /* display: none; */
 }
 main .intro-txt p {}
 main .intro-txt p:first-child {
@@ -320,4 +323,72 @@ article.program .program-banner > div .txt-box {
     font-weight: 400;
     letter-spacing: -0.6px;
     line-height: 1.2;
+}
+
+
+
+/* 모달 팝업 */
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+
+.popup {
+    width: 36%;
+    height: 32%;
+    background-color: #234092;
+    border-radius: 12px;
+    overflow: hidden;
+    
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* outline: 3px solid red; */
+}
+.popup .top {
+    padding: 40px;
+    height: 75%;
+    box-sizing: border-box;
+
+    background-color: rgb(255,255,255);
+    color: #333;
+    text-align: center;
+}
+.popup .top h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.popup .top p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+.popup .top p strong {
+    font-weight: 700;
+}
+
+.popup .bottom {
+    height: 25%;   
+    
+    text-align: center;
+}
+.popup .bottom button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    color: rgb(255,255,255);
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

@@ -3,8 +3,6 @@
 /* footer.css */
 
 footer {
-    /* border-top: 1px solid #ccc; */
-    /* padding: 60px 0; */
     background-color: #000;
     font-size: 1rem;
 }
@@ -37,7 +35,7 @@ footer .logo-bottom {
     margin-right: 40px;
 }
 footer .logo-bottom img {
-    opacity: 0.5;
+    /* opacity: 0.5; */
     height: 40px;
     margin-top: 5px;
 }
