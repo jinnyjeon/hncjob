@@ -44,7 +44,8 @@ body {
 
 /* 컨텐츠 너비설정 */
 .inner {
-    width: 1280px;
+    /* width: 1280px; */
+    width: 1200px;
     margin: 0 auto;
 }
 .inbox { /* index-바로가기 박스 */
