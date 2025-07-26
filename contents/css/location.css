@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* location.css */
+
+/* 변경된 서브페이지 header 디자인 */
+
+header {
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #ccc;
+}
+header nav ul.gnb > li > a {
+    color: rgb(0,0,0);
+}
+header nav ul.gnb > li > a:hover {
+    color: #234092;
+}
+
+/* 상단 탑 */

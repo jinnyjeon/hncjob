@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* hnc.css */
+
+/* 변경된 서브페이지 header 디자인 */
+
+header {
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #ccc;
+}
+header nav ul.gnb > li > a {
+    color: rgb(0,0,0);
+}
+header nav ul.gnb > li > a:hover {
+    color: #234092;
+}
+
+/* 상단 탑 */
+
+section.sub-top {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 300px;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    background-image: url(../img/hnc/sub-top-hnc.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    text-align: center;
+}
+section.sub-top .bread-crumb {
+    line-height: 50px;
+    border-bottom: thin solid rgba(255,255,255,0.3);
+    margin-bottom: 50px;
+    /* outline: 2px solid lime; */
+}
+section.sub-top .bread-crumb ul {}
+section.sub-top .bread-crumb ul li {
+    display: inline-block;
+    padding: 0 2px;
+    
+}
+section.sub-top .bread-crumb ul li.on {
+    border-bottom: 4px solid rgba(255,255,255,0.8);
+}
+section.sub-top .bread-crumb ul li~li {
+    margin-left: 20px;
+}
+section.sub-top .bread-crumb ul li a {
+    color: rgba(255,255,255,0.3);
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+section.sub-top .bread-crumb ul li.on a {
+    color: rgba(255,255,255,0.9);
+}
+
+section.sub-top .page-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+}
+
+
+
+section.content {}
+section.content .inbox {
+    width: 1200px;
+    margin: 0 auto 140px;
+    padding: 0 100px;
+    box-sizing: border-box;
+    /* outline: 3px solid red; */
+}
+section.content .img-box {
+    width: 35%;
+    float: left;
+}
+section.content .img-box img {
+    width: 100%;
+}
+
+section.content .txt-box {
+    /* font-family: "Noto Sans KR", sans-serif; */
+    width: 60%;
+    float: right;
+}
+section.content .txt-box h3 {
+    color: #333;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+section.content .txt-box p {
+    color: #555;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+section.content .txt-box p.greeting {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
