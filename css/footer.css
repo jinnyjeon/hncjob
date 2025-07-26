@@ -11,7 +11,8 @@ footer .links {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 footer .links ul {
-    width: 1280px;
+    /* width: 1280px; */
+    width: 1200px;
     margin: 0 auto;
     line-height: 60px;
 }
