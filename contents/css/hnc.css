@@ -36,9 +36,7 @@ section.sub-top .bread-crumb {
     line-height: 50px;
     border-bottom: thin solid rgba(255,255,255,0.3);
     margin-bottom: 50px;
-    /* outline: 2px solid lime; */
 }
-section.sub-top .bread-crumb ul {}
 section.sub-top .bread-crumb ul li {
     display: inline-block;
     padding: 0 2px;
@@ -68,13 +66,14 @@ section.sub-top .page-title {
 
 
 
-section.content {}
+section.content {
+    margin-bottom: 140px;
+}
 section.content .inbox {
     width: 1200px;
-    margin: 0 auto 140px;
+    margin: 0 auto;
     padding: 0 100px;
     box-sizing: border-box;
-    /* outline: 3px solid red; */
 }
 section.content .img-box {
     width: 35%;
