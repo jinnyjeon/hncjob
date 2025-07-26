@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* edu.css */
+/* edu-license.html, edu-job.html 공통 css 사용 */
+
+/* 변경된 서브페이지 header 디자인 */
+
+header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ccc;
+}
+
+header nav ul.gnb>li>a {
+    color: rgb(0, 0, 0);
+}
+
+header nav ul.gnb>li>a:hover {
+    color: #234092;
+}
+
+/* 상단 탑 */
+
+section.sub-top {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 300px;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    background-image: url(../img/program/sup-top-program.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    text-align: center;
+}
+
+section.sub-top .bread-crumb {
+    line-height: 50px;
+    border-bottom: thin solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 50px;
+}
+
+section.sub-top .bread-crumb ul li {
+    display: inline-block;
+    padding: 0 2px;
+
+}
+
+section.sub-top .bread-crumb ul li.on {
+    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+section.sub-top .bread-crumb ul li~li {
+    margin-left: 20px;
+}
+
+section.sub-top .bread-crumb ul li a {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+section.sub-top .bread-crumb ul li.on a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+section.sub-top .page-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+section.content {
+    margin-bottom: 140px;
+}
+
+section.content .inbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* card 디자인 */
+section.content .wrapper .card {
+    /* width: 32%; */
+    width: 31.33%;
+    padding: 20px;
+    border: 1px solid #3887C9;
+    box-sizing: border-box;
+    border-radius: 16px;
+    /* margin-bottom: 2%; */
+    margin-bottom: 3%;
+
+    float: left;
+}
+
+section.content .wrapper .card~.card {
+    /* margin-left: 2%; */
+    margin-left: 3%;
+}
+
+section.content .wrapper .card:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+section.content .wrapper .card .img-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section.content .wrapper .card .img-box img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+section.content .wrapper .card .txt-box {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.card .txt-box .title {
+    margin-bottom: 20px;
+}
+
+.card .txt-box .title h4 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.card .txt-box .title h4 a {
+    color: #222;
+}
+.card .txt-box .title h4 a:hover {
+    color: #3887C9;
+    text-decoration: underline;
+}
+
+.card .txt-box .title p {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.card .txt-box .detail {}
+
+.card .txt-box .detail p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.card .txt-box .detail p span {}
+
+.card .txt-box .detail p span:first-child {
+    margin-right: 10px;
+    font-weight: 600;
+}
